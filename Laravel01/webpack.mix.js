@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+//const mix = require('laravel-mix');//
 
 // mix.scripts([
 //     'resources/js/my-script.js',
@@ -20,10 +20,21 @@ const mix = require('laravel-mix');
 
 // mix.sass('resources/sass/app.scss', 'public/css/my-app.css');
 
-mix.scripts([
-    'resources/js/my-script.js',
-    'resources/js/my-script-console.js',
+// mix.scripts([
+//     'resources/js/my-script.js',
+//     'resources/js/my-script-console.js',
+//     ], 'public/js/my-app.js').version();
+
+// mix.sass('resources/sass/app.scss', 'public/css/my-app.css').version();
+
+const mix = require('laravel-mix');
+
+    mix.scripts([
+        'resources/js/bootstrap.bundle.min.js',
+        'resources/js/my-script.js',
     ], 'public/js/my-app.js').version();
 
-mix.sass('resources/sass/app.scss', 'public/css/my-app.css').version();
-
+    mix.styles([
+        'resources/css/bootstrap.min.css',
+        'resources/css/my-style.css',
+    ], 'public/css/my-app.css').version();

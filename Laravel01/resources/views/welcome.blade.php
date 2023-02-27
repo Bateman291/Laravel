@@ -10,7 +10,7 @@
 <body>
       <div class="container text-center py-5">
         <button id="myPopover" type="button" class="btn btn-lg btn-danger"
-        data-bs-toggle="popover" tittle="Lagi serius...."
+        data-bs-toggle="popover" title="Lagi serius...."
         data-bs-content="Belajar Laravel mix compiling assets!">
         Belajar Laravel</button>
       </div>
